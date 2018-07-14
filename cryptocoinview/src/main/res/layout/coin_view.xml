@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_bg"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:animateLayoutChanges="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/coin_image"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/coin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/coin_image"
+            android:textColor="#106fe0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usd_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coin_name"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/coin_image"
+            android:textColor="#1e1e1e"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/percent_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coin_name"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/usd_rate"
+            android:textColor="#019e73"
+            android:textSize="18sp" />
+
+
+
+        <ImageView
+            android:id="@+id/refreshBtn"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_width="36dp"
+            android:padding="8dp"
+            android:src="@drawable/refresh"
+            android:layout_height="36dp" />
+
+        <ProgressBar
+            android:id="@+id/price_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="64dp"
+            android:indeterminate="true"
+            android:layout_marginTop="4dp"
+            android:indeterminateTint="#106fe0"
+            android:layout_toEndOf="@+id/coin_image"
+            android:layout_below="@+id/coin_name"
+            android:layout_marginStart="4dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="#e1e5ea"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/second_row"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:animateLayoutChanges="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8sp">
+
+            <TextView
+                android:id="@+id/rank_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:text="RANK"
+                android:textColor="#aa1e1e1e" />
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rank_label"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="8dp"
+                android:textColor="#1e1e1e"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/rank_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="64dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#106fe0"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="#e1e5ea"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:animateLayoutChanges="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/market_cap_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="true"
+                android:text="MARKET CAP"
+                android:textColor="#aa1e1e1e" />
+
+            <TextView
+                android:id="@+id/market_cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/market_cap_label"
+                android:paddingTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#1e1e1e"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/mc_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="64dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#106fe0"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="#e1e5ea"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:animateLayoutChanges="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/volume_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Volume (24H)"
+                android:textAllCaps="true"
+                android:textColor="#aa1e1e1e" />
+
+            <TextView
+                android:id="@+id/volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/volume_label"
+                android:paddingTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#1e1e1e"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/volume_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="64dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#106fe0"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
