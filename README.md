@@ -4,7 +4,7 @@ An Android View which show data of cryptocurrency.
 
 A Quick look:
 
-<img src="https://user-images.githubusercontent.com/10809719/42724532-ba035c38-8791-11e8-9d81-0a675a813f18.png" width="360px" height="156px"/>
+<p align="center"><img src="https://user-images.githubusercontent.com/10809719/42724532-ba035c38-8791-11e8-9d81-0a675a813f18.png" width="360px" height="156px"/></p>
 
 You can opt for 1636 coins available in the market.
 
@@ -22,7 +22,7 @@ allprojects {
 **Step 2. Add the dependency**
 ```   
 dependencies {
- implementation 'com.github.bxute:CryptoCoinView:v0.2'
+ implementation 'com.github.bxute:CryptoCoinView:v0.1'
 }
 ```
 
@@ -45,5 +45,5 @@ sbd.setCoinId(Coins.SBD);
 That`s It 😀.
 
 As a result you will get
-
-<img src="https://user-images.githubusercontent.com/10809719/42724595-d8477228-8792-11e8-867b-5d536afa6da1.png" width="320px" height="640px"/>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/10809719/42724595-d8477228-8792-11e8-867b-5d536afa6da1.png" width="320px" height="640px"/></p>
