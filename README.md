@@ -22,7 +22,7 @@ allprojects {
 **Step 2. Add the dependency**
 ```   
 dependencies {
- implementation 'com.github.bxute:CryptoCoinView:v0.1'
+ implementation 'com.github.bxute:CryptoCoinView:v0.2'
 }
 ```
 
