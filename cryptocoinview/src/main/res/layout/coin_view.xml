@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@drawable/rounded_bg"
     android:layout_height="wrap_content"
     android:animateLayoutChanges="true"
+    android:background="@drawable/rounded_bg"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -23,9 +23,9 @@
             android:id="@+id/coin_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
             android:layout_toEndOf="@+id/coin_image"
             android:textColor="#106fe0"
             android:textSize="20sp"
@@ -52,35 +52,34 @@
             android:textSize="18sp" />
 
 
-
         <ImageView
             android:id="@+id/refreshBtn"
-            android:clickable="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:layout_alignParentEnd="true"
             android:background="?selectableItemBackgroundBorderless"
-            android:layout_width="36dp"
+            android:clickable="true"
             android:padding="8dp"
-            android:src="@drawable/refresh"
-            android:layout_height="36dp" />
+            android:src="@drawable/refresh" />
 
         <ProgressBar
             android:id="@+id/price_progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="64dp"
-            android:indeterminate="true"
-            android:layout_marginTop="4dp"
-            android:indeterminateTint="#106fe0"
-            android:layout_toEndOf="@+id/coin_image"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/coin_name"
             android:layout_marginStart="4dp"
-            android:layout_height="wrap_content" />
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/coin_image"
+            android:indeterminate="true"
+            android:indeterminateTint="#106fe0" />
 
     </RelativeLayout>
 
     <View
-        android:background="#e1e5ea"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:background="#e1e5ea" />
 
     <LinearLayout
         android:id="@+id/second_row"
@@ -91,10 +90,10 @@
         android:weightSum="3">
 
         <RelativeLayout
-            android:animateLayoutChanges="true"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:animateLayoutChanges="true"
             android:padding="8sp">
 
             <TextView
@@ -102,8 +101,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textAllCaps="true"
                 android:text="RANK"
+                android:textAllCaps="true"
                 android:textColor="#aa1e1e1e" />
 
             <TextView
@@ -120,23 +119,23 @@
                 android:id="@+id/rank_progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="64dp"
-                android:indeterminate="true"
-                android:indeterminateTint="#106fe0"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true" />
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="#106fe0" />
 
         </RelativeLayout>
 
         <View
-            android:background="#e1e5ea"
             android:layout_width="1dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="#e1e5ea" />
 
         <RelativeLayout
-            android:animateLayoutChanges="true"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:animateLayoutChanges="true"
             android:padding="8dp">
 
             <TextView
@@ -144,8 +143,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textAllCaps="true"
                 android:text="MARKET CAP"
+                android:textAllCaps="true"
                 android:textColor="#aa1e1e1e" />
 
             <TextView
@@ -153,8 +152,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/market_cap_label"
-                android:paddingTop="8dp"
                 android:layout_centerHorizontal="true"
+                android:paddingTop="8dp"
                 android:textColor="#1e1e1e"
                 android:textSize="20sp" />
 
@@ -162,23 +161,23 @@
                 android:id="@+id/mc_progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="64dp"
-                android:indeterminate="true"
-                android:indeterminateTint="#106fe0"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true" />
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="#106fe0" />
 
         </RelativeLayout>
 
         <View
-            android:background="#e1e5ea"
             android:layout_width="1dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="#e1e5ea" />
 
         <RelativeLayout
-            android:animateLayoutChanges="true"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:animateLayoutChanges="true"
             android:padding="8dp">
 
             <TextView
@@ -195,8 +194,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/volume_label"
-                android:paddingTop="8dp"
                 android:layout_centerHorizontal="true"
+                android:paddingTop="8dp"
                 android:textColor="#1e1e1e"
                 android:textSize="20sp" />
 
@@ -204,10 +203,10 @@
                 android:id="@+id/volume_progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="64dp"
-                android:indeterminate="true"
-                android:indeterminateTint="#106fe0"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true" />
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="#106fe0" />
 
         </RelativeLayout>
 
