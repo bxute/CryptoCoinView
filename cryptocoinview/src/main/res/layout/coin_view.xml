@@ -24,9 +24,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="4dp"
-            android:layout_toEndOf="@+id/coin_image"
+            android:layout_toRightOf="@+id/coin_image"
             android:textColor="#106fe0"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -36,8 +36,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/coin_name"
-            android:layout_marginStart="8dp"
-            android:layout_toEndOf="@+id/coin_image"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/coin_image"
             android:textColor="#1e1e1e"
             android:textSize="20sp" />
 
@@ -46,8 +46,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/coin_name"
-            android:layout_marginStart="4dp"
-            android:layout_toEndOf="@+id/usd_rate"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/usd_rate"
             android:textColor="#019e73"
             android:textSize="18sp" />
 
@@ -56,7 +56,7 @@
             android:id="@+id/refreshBtn"
             android:layout_width="36dp"
             android:layout_height="36dp"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:background="?selectableItemBackgroundBorderless"
             android:clickable="true"
             android:padding="8dp"
@@ -68,9 +68,9 @@
             android:layout_width="64dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/coin_name"
-            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
-            android:layout_toEndOf="@+id/coin_image"
+            android:layout_toRightOf="@+id/coin_image"
             android:indeterminate="true"
             android:indeterminateTint="#106fe0" />
 
@@ -100,8 +100,8 @@
                 android:id="@+id/rank_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:text="RANK"
+                android:textSize="12sp"
                 android:textAllCaps="true"
                 android:textColor="#aa1e1e1e" />
 
@@ -113,7 +113,7 @@
                 android:layout_centerHorizontal="true"
                 android:paddingTop="8dp"
                 android:textColor="#1e1e1e"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <ProgressBar
                 android:id="@+id/rank_progressBar"
@@ -142,8 +142,8 @@
                 android:id="@+id/market_cap_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:text="MARKET CAP"
+                android:textSize="12sp"
                 android:textAllCaps="true"
                 android:textColor="#aa1e1e1e" />
 
@@ -155,7 +155,7 @@
                 android:layout_centerHorizontal="true"
                 android:paddingTop="8dp"
                 android:textColor="#1e1e1e"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <ProgressBar
                 android:id="@+id/mc_progressBar"
@@ -184,8 +184,8 @@
                 android:id="@+id/volume_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:text="Volume (24H)"
+                android:textSize="12sp"
                 android:textAllCaps="true"
                 android:textColor="#aa1e1e1e" />
 
@@ -197,7 +197,7 @@
                 android:layout_centerHorizontal="true"
                 android:paddingTop="8dp"
                 android:textColor="#1e1e1e"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <ProgressBar
                 android:id="@+id/volume_progressBar"
