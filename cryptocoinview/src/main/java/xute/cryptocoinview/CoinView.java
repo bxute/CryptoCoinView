@@ -171,6 +171,9 @@ public class CoinView extends FrameLayout implements NetworkUtils.NetworkRespons
       }
     }
     catch (Exception e) {
+      if (rateCallback != null) {
+        rateCallback.onErrorFetchingRate();
+      }
     }
   }
 
@@ -231,5 +234,7 @@ public class CoinView extends FrameLayout implements NetworkUtils.NetworkRespons
 
   public interface RateCallback {
     void onRate(double rate);
+
+    void onErrorFetchingRate();
   }
 }

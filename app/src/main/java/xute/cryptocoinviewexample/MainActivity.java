@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     CoinView sbd = findViewById(R.id.coinViewSBD);
-    sbd.setCoinId(Coins.SBD);
+    sbd.setCoinId(Coins.STEEM);
   }
 }

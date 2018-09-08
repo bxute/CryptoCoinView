@@ -3,7 +3,7 @@ package xute.cryptocoinview;
 /*
 * List of coins supported
 * */
-public class Coins {
+public class  Coins {
   public static final int BTC = 1;
   public static final int LTC = 2;
   public static final int NMC = 3;
